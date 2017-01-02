@@ -1,0 +1,221 @@
+@keyframes show-subnav {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  },
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.page-header {
+  position: relative;
+
+  &__topline {
+    height: 45px;
+    background-color: $color-bg-header-topline;
+
+    .currency {
+      float: left;
+      min-width: 120px;
+
+      &__change {
+        display: block;
+        color: $color-text-topline-currency;
+        font-size: 13px;
+        line-height: 45px;
+        text-decoration: none;
+        transition: color .3s;
+
+        &:hover {
+          color: darken($color-text-topline-currency, 10%);
+        }
+      }
+    }
+
+    .login {
+      float: right;
+      min-width: 135px;
+      margin: 0;
+      padding: 0;
+      margin-right: 82px;
+      list-style: none;
+      font-size: 0;
+
+      &__item {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 35px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &__link {
+        display: block;
+        font-size: 13px;
+        color: $color-text-topline-login;
+        line-height: 45px;
+        text-decoration: none;
+        transition: color .3s;
+
+        &:hover {
+          color: darken($color-text-topline-login, 10%);
+        }
+      }
+    }
+
+    .basket {
+      float: right;
+      width: 147px;
+    }
+  }
+
+  &__bottomline {
+    background-color: $color-bg-header-underline;
+
+    .logo {
+      float: left;
+
+      &__link {
+        margin-top: 38px;
+        display: block;
+      }
+    }
+
+    .main-nav {
+      float: right;
+
+      .categories {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+
+        &__item {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 57px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover > .dropdown {
+            display: block;
+            transform-origin: top;
+            animation: show-subnav 200ms;
+          }
+        }
+
+        &__link {
+          position: relative;
+          display: block;
+          padding-top: 45px;
+          padding-bottom: 53px;
+          font-size: 13px;
+          color: $color-text-nav-main-categories;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: color .3s;
+
+          &:hover {
+            color: $color-accent;
+          }
+
+          i {
+            position: absolute;
+            top: 63px;
+            left: -5px;
+            line-height: initial;
+          }
+
+          &--active {
+            color: $color-accent;
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 467px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-left: 27px;
+    background-color: $color-bg-header-underline;
+    box-shadow: 0 17px 24px rgba(0, 0, 0, .2);
+    z-index: 9999;
+
+    &--lookbook {
+      right: 0;
+      left: initial;
+    }
+
+    &__half {
+      float: left;
+      width: 170px;
+      margin-right: 68px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__heading {
+      margin-bottom: 30px;
+      font-size: 12px;
+      font-weight: 700;
+      color: $color-text-subnav-heading;
+      text-transform: uppercase;
+    }
+
+    &__items {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &__item {
+      margin-bottom: 12px;
+    }
+
+    &__link {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 14px;
+      color: $color-text-subnav-item;
+      text-decoration: none;
+      transition: color .2s;
+
+      &:hover {
+        color: darken($color-text-subnav-item, 30%);
+      }
+    }
+
+    &__banner {
+      display: block;
+      margin-top: 45px;
+      padding: 56px 51px;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: $color-text-nav-btn-sale;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: $color-bg-footer-banner-award;
+
+      span {
+        display: inline-block;
+        margin-top: 7px;
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+.page-footer {
+
+  .footer-nav {
+    padding: 60px 0 55px;
+    background-color: $color-bg-subnav;
+
+    &__col {
+      float: left;
+      width: 160px;
+
+      &--info {
+        margin-right: 77px;
+      }
+
+      &--whybuy {
+        margin-right: 77px;
+      }
+
+      &--account {
+        margin-right: 76px;
+      }
+
+      &--lookbook {
+        margin-right: 78px;
+        margin-right: 60px;
+      }
+
+      &--contacts {
+        width: 240px;
+      }
+
+      .address {
+        margin-bottom: 23px;
+        padding-top: 4px;
+        color: $color-text-footer;
+        font-size: 14px;
+        line-height: 20px;
+        font-style: normal;
+        text-decoration: none;
+      }
+
+      .phone {
+        margin-bottom: 14px;
+        color: $color-text-footer;
+        font-size: 14px;
+
+        &__number {
+          color: $color-text-footer;
+          font-size: 14px;
+          text-decoration: underline;
+          transition: color .2s;
+
+          &:hover {
+            color: darken($color-text-footer, 30%);
+          }
+        }
+      }
+
+      .email {
+        color: $color-text-footer;
+        font-size: 14px;
+
+        &__addr {
+          color: $color-text-footer;
+          font-size: 14px;
+          text-decoration: underline;
+          transition: color .2s;
+
+          &:hover {
+            color: darken($color-text-footer, 30%);
+          }
+        }
+      }
+    }
+
+    &__heading {
+      margin-bottom: 23px;
+      color: $color-text-footer-heading;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0;
+    }
+
+    &__item {
+      padding: 0;
+    }
+
+    &__link {
+      color: $color-text-footer;
+      font-size: 14px;
+      line-height: 30px;
+      text-decoration: none;
+      transition: color .2s;
+
+      &:hover {
+        color: darken($color-text-footer, 30%);
+      }
+    }
+  }
+
+  .banners {
+    padding-bottom: 56px;
+    background-color: $color-bg-subnav;
+
+    .banner-award {
+      float: left;
+      width: 570px;
+      height: 200px;
+      padding-top: 55px;
+      font-size: 36px;
+      letter-spacing: 2px;
+      line-height: 44px;
+      color: $color-text-footer-banner-award;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: $color-bg-footer-banner-award;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .banner-social {
+      float: right;
+      width: 570px;
+      height: 200px;
+      padding-top: 80px;
+      font-size: 0;
+      text-align: center;
+      background-color: $color-accent;
+
+      &__link {
+        display: inline-block;
+        margin-right: 36px;
+        font-size: 36px;
+        color: $color-text-footer-banner-award;
+        text-decoration: none;
+        transition: color .3s;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          color: darken($color-text-footer-banner-award, 80%);
+        }
+      }
+    }
+  }
+
+  &__subline {
+    padding: 15px;
+    font-size: 13px;
+    color: $color-text-footer;
+    background-color: $color-bg-footer-bottomline;
+
+    .copyright {
+      float: left;
+      width: 300px;
+    }
+
+    .designby {
+      float: right;
+      width: 220px;
+    }
+
+    .developer {
+      float: right;
+      width: 170px;
+    }
+  }
+}

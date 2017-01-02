@@ -1,0 +1,84 @@
+.brand {
+  padding-top: 63px;
+  padding-bottom: 120px;
+
+  .block-left {
+    float: left;
+    width: 570px;
+    margin-right: 30px;
+  }
+
+  .block-right {
+    float: right;
+    width: 570px;
+  }
+
+  &__row {
+    margin-bottom: 62px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__col {
+
+    &--buyer {
+      margin-top: -162px;
+      margin-bottom: 68px;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__img {
+    display: block;
+
+    &--offset {
+      margin-bottom: 27px;
+    }
+  }
+
+  &__descr {
+
+    &--designer {
+      margin-top: 60px;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 26px;
+    @include f-montserrat-regular;
+    font-size: 18px;
+    color: $color-text-brand-heading;
+    text-transform: uppercase;
+  }
+
+  &__subheading {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: $color-text-brand-subheading;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    @include f-roboto-regular;
+    font-size: 15px;
+    line-height: 21px;
+    color: $color-text-brand-main;
+  }
+
+  &__link {
+    color: $color-accent;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

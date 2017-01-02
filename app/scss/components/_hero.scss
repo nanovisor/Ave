@@ -1,0 +1,23 @@
+.hero {
+  padding-top: 160px;
+  padding-bottom: 140px;
+  @include f-montserrat-light;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text-hero;
+  background: #666 url("../img/content/banner-ave.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__heading {
+    font-size: 48px;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 30px;
+  }
+}
